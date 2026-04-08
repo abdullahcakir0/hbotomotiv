@@ -1,0 +1,102 @@
+/* ========== HB Otomotiv - Custom Styles ========== */
+
+/* Light mode overrides */
+html:not(.dark) body {
+    background: #f8fafc;
+    color: #1e293b;
+}
+html:not(.dark) .bg-dark-900\/80,
+html:not(.dark) .bg-dark-900\/60,
+html:not(.dark) .bg-dark-900\/95,
+html:not(.dark) .bg-dark-900\/50 {
+    background: rgba(255,255,255,0.9) !important;
+}
+html:not(.dark) .bg-dark-950 {
+    background: #f1f5f9 !important;
+}
+html:not(.dark) .text-gray-100 { color: #1e293b !important; }
+html:not(.dark) .text-gray-300 { color: #475569 !important; }
+html:not(.dark) .text-gray-400 { color: #64748b !important; }
+html:not(.dark) .text-gray-500 { color: #94a3b8 !important; }
+html:not(.dark) .text-white { color: #0f172a !important; }
+html:not(.dark) .border-white\/5 { border-color: rgba(0,0,0,0.08) !important; }
+html:not(.dark) .bg-white\/5 { background: rgba(0,0,0,0.04) !important; }
+html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
+
+/* Nav Items */
+.nav-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #94a3b8;
+    transition: all 0.2s;
+}
+.nav-item:hover, .nav-item.active {
+    color: #facc15;
+    background: rgba(250,204,21,0.08);
+}
+.mobile-nav-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    color: #94a3b8;
+    transition: all 0.2s;
+}
+.mobile-nav-item:hover, .mobile-nav-item.active {
+    color: #facc15;
+    background: rgba(250,204,21,0.08);
+}
+
+/* Page transitions */
+.page-section {
+    animation: fadeIn 0.4s ease;
+}
+.page-section.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slow bounce for WhatsApp */
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+.animate-bounce-slow {
+    animation: bounce-slow 2s infinite;
+}
+
+/* Counter animation placeholder */
+.counter { transition: all 0.3s; }
+
+/* Scroll progress bar */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #facc15, #eab308);
+    z-index: 100;
+    transition: width 0.1s linear;
+}
+
+/* Service cards hover glow */
+.service-card:hover {
+    box-shadow: 0 0 30px rgba(250,204,21,0.06);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0f0f1a; }
+::-webkit-scrollbar-thumb { background: #2a2a40; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a55; }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+    .hero h1 { font-size: 2rem; }
+}
