@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Otomotiv | İstanbul Oto Lastik & 7/24 Yol Yardım Hizmeti</title>
+    <meta name="description" content="İstanbul ve çevresinde 7/24 oto lastik değişimi, yol yardım, lastik satış ve mobil lastik servis hizmeti. Hemen arayın: +90 539 570 52 75">
+    <meta name="keywords" content="istanbul lastik, oto lastik, yol yardım, 7/24 lastik, lastik değişimi, mobil lastik servis, istanbul yol yardım, acil lastik, lastik tamiri, kış lastiği, yaz lastiği">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HB Otomotiv">
+    <link rel="canonical" href="https://hbotomotiv.com/">
+    <meta property="og:title" content="HB Otomotiv | İstanbul 7/24 Oto Lastik & Yol Yardım">
+    <meta property="og:description" content="İstanbul genelinde 7/24 profesyonel lastik ve yol yardım hizmeti. Acil durumlarınızda yanınızdayız.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hbotomotiv.com/">
+    <meta property="og:locale" content="tr_TR">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e3a5f',900:'#0f1d30' },
+                        accent: { 400:'#facc15',500:'#eab308',600:'#ca8a04' },
+                        dark: { 800:'#1a1a2e',900:'#0f0f1a',950:'#080812' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"AutoRepair",
+        "name":"HB Otomotiv",
+        "url":"https://hbotomotiv.com",
+        "telephone":"+905395705275",
+        "address":{"@type":"PostalAddress","addressLocality":"İstanbul","addressRegion":"İstanbul","addressCountry":"TR"},
+        "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},
+        "areaServed":{"@type":"City","name":"İstanbul"},
+        "description":"İstanbul ve çevresinde 7/24 oto lastik değişimi, yol yardım hizmeti.",
+        "priceRange":"₺₺"
+    }
+    </script>
+</head>
+<body class="font-sans bg-dark-950 text-gray-100 antialiased">
+
+    <!-- STICKY TOP BAR -->
+    <div id="top-bar" class="fixed top-0 left-0 right-0 z-[60] bg-accent-500/95 backdrop-blur-sm text-brand-900 py-1.5 text-center text-sm font-semibold tracking-wide">
+        <a href="tel:+905395705275" class="hover:underline">📞 7/24 Acil Lastik & Yol Yardım: <span class="font-bold">0539 570 52 75</span></a>
+    </div>
+
+    <!-- HEADER / NAV -->
+    <header id="main-header" class="fixed top-8 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-dark-900/80 backdrop-blur-xl rounded-2xl border border-white/5 shadow-2xl px-6 py-3 flex items-center justify-between">
+                <a href="#" data-page="home" class="flex items-center gap-3 nav-link">
+                    <div class="w-10 h-10 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center font-black text-brand-900 text-lg">HB</div>
+                    <div class="hidden sm:block">
+                        <span class="font-bold text-lg text-white">HB Otomotiv</span>
+                        <span class="block text-[10px] text-gray-400 -mt-1 tracking-widest uppercase">Lastik & Yol Yardım</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-1" id="desktop-nav">
+                    <a href="#" data-page="home" class="nav-link nav-item active">Ana Sayfa</a>
+                    <a href="#" data-page="hizmetler" class="nav-link nav-item">Hizmetler</a>
+                    <a href="#" data-page="kurumsal" class="nav-link nav-item">Kurumsal</a>
+                    <a href="#" data-page="iletisim" class="nav-link nav-item">İletişim</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button id="dark-toggle" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition" aria-label="Tema Değiştir">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                    <a href="tel:+905395705275" id="nav-cta" class="hidden sm:flex items-center gap-2 bg-gradient-to-r from-accent-400 to-accent-500 text-brand-900 font-bold px-5 py-2.5 rounded-xl hover:scale-105 transition-transform shadow-lg shadow-accent-500/25 text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                        Hemen Ara
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center" aria-label="Menü">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-2 bg-dark-900/95 backdrop-blur-xl rounded-2xl border border-white/5 shadow-2xl p-4">
+                <a href="#" data-page="home" class="nav-link mobile-nav-item active">Ana Sayfa</a>
+                <a href="#" data-page="hizmetler" class="nav-link mobile-nav-item">Hizmetler</a>
+                <a href="#" data-page="kurumsal" class="nav-link mobile-nav-item">Kurumsal</a>
+                <a href="#" data-page="iletisim" class="nav-link mobile-nav-item">İletişim</a>
+                <a href="tel:+905395705275" class="block mt-3 text-center bg-gradient-to-r from-accent-400 to-accent-500 text-brand-900 font-bold py-3 rounded-xl">📞 Hemen Ara</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE CONTAINER -->
+    <main id="app" class="pt-24">
+
+        <!-- ============ HOME PAGE ============ -->
+        <div id="page-home" class="page-section active">
+            <!-- HERO -->
+            <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+                <div class="absolute inset-0">
+                    <img src="images/hero-lastik-servis.png" alt="İstanbul profesyonel oto lastik değişim servisi" class="w-full h-full object-cover" loading="eager">
+                    <div class="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/70 to-dark-950/40"></div>
+                </div>
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                    <div class="max-w-2xl">
+                        <div class="inline-flex items-center gap-2 bg-accent-500/15 border border-accent-500/30 rounded-full px-4 py-1.5 mb-6">
+                            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                            <span class="text-accent-400 text-sm font-medium">7/24 Hizmetinizdeyiz</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                            İstanbul <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">Oto Lastik</span> & Yol Yardım
+                        </h1>
+                        <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+                            İstanbul ve tüm çevre ilçelerde <strong class="text-white">7 gün 24 saat</strong> profesyonel lastik değişimi, mobil lastik servis ve acil yol yardım hizmeti sunuyoruz.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="tel:+905395705275" id="hero-cta-call" class="group flex items-center justify-center gap-3 bg-gradient-to-r from-accent-400 to-accent-500 text-brand-900 font-extrabold text-lg px-8 py-5 rounded-2xl hover:scale-105 transition-all duration-300 shadow-2xl shadow-accent-500/30">
+                                <svg class="w-6 h-6 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                                HEMEN ARA
+                            </a>
+                            <a href="https://wa.me/905395705275?text=Merhaba%2C%20lastik%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." id="hero-cta-whatsapp" class="group flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white font-bold text-lg px-8 py-5 rounded-2xl hover:scale-105 transition-all duration-300 shadow-2xl shadow-green-600/30" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                        <div class="mt-10 flex items-center gap-6 text-sm text-gray-400">
+                            <div class="flex items-center gap-2"><span class="text-accent-400">✓</span> Ücretsiz Keşif</div>
+                            <div class="flex items-center gap-2"><span class="text-accent-400">✓</span> Hızlı Servis</div>
+                            <div class="flex items-center gap-2"><span class="text-accent-400">✓</span> Uygun Fiyat</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS -->
+            <section class="py-12 bg-dark-900/50 border-y border-white/5">
+                <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div><p class="text-3xl font-black text-accent-400 counter" data-target="15">0</p><p class="text-sm text-gray-400 mt-1">Yıllık Deneyim</p></div>
+                    <div><p class="text-3xl font-black text-accent-400 counter" data-target="50000">0</p><p class="text-sm text-gray-400 mt-1">Mutlu Müşteri</p></div>
+                    <div><p class="text-3xl font-black text-accent-400 counter" data-target="30">0</p><p class="text-sm text-gray-400 mt-1">Dakikada Ulaşım</p></div>
+                    <div><p class="text-3xl font-black text-accent-400">7/24</p><p class="text-sm text-gray-400 mt-1">Kesintisiz Hizmet</p></div>
+                </div>
+            </section>
+
+            <!-- SERVICES OVERVIEW -->
+            <section class="py-20 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-14">
+                        <h2 class="text-3xl sm:text-4xl font-black mb-4">Hizmetlerimiz</h2>
+                        <p class="text-gray-400 max-w-2xl mx-auto">İstanbul'un her noktasına profesyonel lastik ve yol yardım hizmeti sunuyoruz.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🛞</div>
+                            <h3 class="text-xl font-bold mb-2">Lastik Değişimi</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Yaz ve kış lastiği değişimi, balans ayarı ve rot-balans hizmeti profesyonel ekibimizle kapınızda.</p>
+                        </article>
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🚗</div>
+                            <h3 class="text-xl font-bold mb-2">Mobil Lastik Servis</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Bulunduğunuz konuma geliyoruz. İstanbul genelinde mobil lastik değişim ve tamir hizmeti.</p>
+                        </article>
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🆘</div>
+                            <h3 class="text-xl font-bold mb-2">7/24 Yol Yardım</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Gece gündüz fark etmez, acil yol yardım ekibimiz 30 dakika içinde yanınızdadır.</p>
+                        </article>
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🔧</div>
+                            <h3 class="text-xl font-bold mb-2">Lastik Tamiri</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Patlak lastik tamiri, yama ve onarım işlemleri profesyonel ekipmanlarla yapılır.</p>
+                        </article>
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">📦</div>
+                            <h3 class="text-xl font-bold mb-2">Lastik Satış</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Michelin, Bridgestone, Pirelli, Goodyear ve daha birçok markanın orijinal lastikleri stokta.</p>
+                        </article>
+                        <article class="service-card group bg-dark-900/60 border border-white/5 rounded-2xl p-6 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1">
+                            <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🏢</div>
+                            <h3 class="text-xl font-bold mb-2">Kurumsal Filo</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Şirket filoları için özel anlaşmalı lastik bakım ve değişim programları.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA BANNER -->
+            <section class="py-16 bg-gradient-to-r from-brand-800 to-brand-900 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-accent-400 rounded-full blur-[128px]"></div>
+                </div>
+                <div class="relative max-w-4xl mx-auto px-4 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-black mb-4">Yolda mı Kaldınız?</h2>
+                    <p class="text-lg text-gray-300 mb-8">İstanbul'un neresinde olursanız olun, 30 dakika içinde yanınızdayız. Hemen arayın!</p>
+                    <a href="tel:+905395705275" class="inline-flex items-center gap-3 bg-gradient-to-r from-accent-400 to-accent-500 text-brand-900 font-extrabold text-xl px-10 py-5 rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-accent-500/30">
+                        📞 0539 570 52 75
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============ HİZMETLER PAGE ============ -->
+        <div id="page-hizmetler" class="page-section hidden">
+            <section class="pt-16 pb-20 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-14">
+                        <span class="text-accent-400 font-semibold text-sm uppercase tracking-widest">Profesyonel Çözümler</span>
+                        <h1 class="text-4xl sm:text-5xl font-black mt-3 mb-4">Hizmetlerimiz</h1>
+                        <p class="text-gray-400 max-w-2xl mx-auto">İstanbul genelinde oto lastik ve yol yardım alanında sunduğumuz tüm hizmetler.</p>
+                    </div>
+
+                    <!-- Service Detail 1 -->
+                    <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
+                        <div>
+                            <img src="images/lastik-stok-deposu.png" alt="İstanbul lastik satış ve stok deposu - premium marka lastikler" class="rounded-2xl shadow-2xl w-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-4">Lastik Satış & Değişim</h2>
+                            <p class="text-gray-300 leading-relaxed mb-4">Michelin, Bridgestone, Pirelli, Continental, Goodyear gibi dünya markalarının orijinal lastiklerini uygun fiyatlarla sunuyoruz. Lastik değişimi sırasında balans ayarı ücretsizdir.</p>
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Yaz & Kış Lastiği</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> 4 Mevsim Lastik</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Ücretsiz Balans Ayarı</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Rot-Balans Hizmeti</li>
+                            </ul>
+                            <a href="tel:+905395705275" class="inline-flex items-center gap-2 mt-6 bg-accent-500 text-brand-900 font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">📞 Fiyat Alın</a>
+                        </div>
+                    </div>
+
+                    <!-- Service Detail 2 -->
+                    <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
+                        <div class="order-2 md:order-1">
+                            <h2 class="text-3xl font-bold mb-4">7/24 Acil Yol Yardım</h2>
+                            <p class="text-gray-300 leading-relaxed mb-4">İstanbul'un her noktasına ortalama 30 dakikada ulaşan acil yol yardım ekibimiz, patlak lastik, akü takviye, yakıt ikmali ve çekici hizmeti sunmaktadır.</p>
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Patlak Lastik Değişimi</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Akü Takviye</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Yakıt İkmali</li>
+                                <li class="flex items-center gap-2"><span class="text-accent-400">✓</span> Araç Çekici Hizmeti</li>
+                            </ul>
+                            <a href="tel:+905395705275" class="inline-flex items-center gap-2 mt-6 bg-red-600 text-white font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">🆘 Acil Yardım Çağır</a>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="images/yol-yardim-istanbul.png" alt="İstanbul gece yol yardım ve çekici hizmeti" class="rounded-2xl shadow-2xl w-full" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Hizmet Bölgeleri -->
+                    <div class="bg-dark-900/60 border border-white/5 rounded-2xl p-8 mt-10">
+                        <h2 class="text-2xl font-bold mb-6 text-center">Hizmet Bölgelerimiz</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-sm text-gray-300">
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Kadıköy</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Beşiktaş</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Şişli</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Üsküdar</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Ataşehir</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Maltepe</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Kartal</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Pendik</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Beylikdüzü</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Bakırköy</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Fatih</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Sarıyer</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Bağcılar</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Bahçelievler</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Esenyurt</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Sultanbeyli</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Tuzla</span>
+                            <span class="bg-white/5 rounded-lg px-3 py-2 text-center">Çekmeköy</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============ KURUMSAL PAGE ============ -->
+        <div id="page-kurumsal" class="page-section hidden">
+            <section class="pt-16 pb-20 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-14">
+                        <span class="text-accent-400 font-semibold text-sm uppercase tracking-widest">Hakkımızda</span>
+                        <h1 class="text-4xl sm:text-5xl font-black mt-3 mb-4">Kurumsal</h1>
+                        <p class="text-gray-400 max-w-2xl mx-auto">15 yılı aşkın tecrübemizle İstanbul'un güvenilir lastik ve yol yardım markası.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+                        <img src="images/kurumsal-ekip.png" alt="HB Otomotiv profesyonel lastik servis ekibi" class="rounded-2xl shadow-2xl w-full" loading="lazy">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-4">Neden HB Otomotiv?</h2>
+                            <p class="text-gray-300 leading-relaxed mb-6">HB Otomotiv olarak 2010 yılından bu yana İstanbul ve çevresinde oto lastik satış, montaj ve 7/24 yol yardım hizmeti vermekteyiz. Müşteri memnuniyetini en üst düzeyde tutarak, sektörde güvenilir bir marka haline geldik.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3"><span class="text-accent-400 text-xl mt-0.5">🏆</span><div><h3 class="font-bold">Deneyimli Ekip</h3><p class="text-gray-400 text-sm">Alanında uzman teknisyenlerimizle kaliteli hizmet garantisi.</p></div></div>
+                                <div class="flex items-start gap-3"><span class="text-accent-400 text-xl mt-0.5">⚡</span><div><h3 class="font-bold">Hızlı Müdahale</h3><p class="text-gray-400 text-sm">Ortalama 30 dakika içinde lokasyonunuza ulaşıyoruz.</p></div></div>
+                                <div class="flex items-start gap-3"><span class="text-accent-400 text-xl mt-0.5">💰</span><div><h3 class="font-bold">Uygun Fiyat</h3><p class="text-gray-400 text-sm">Rekabetçi fiyatlar ve kampanyalarla bütçenize uygun çözümler.</p></div></div>
+                                <div class="flex items-start gap-3"><span class="text-accent-400 text-xl mt-0.5">🤝</span><div><h3 class="font-bold">Güvenilirlik</h3><p class="text-gray-400 text-sm">50.000+ mutlu müşteri ve yüzlerce 5 yıldızlı değerlendirme.</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============ İLETİŞİM PAGE ============ -->
+        <div id="page-iletisim" class="page-section hidden">
+            <section class="pt-16 pb-20 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-14">
+                        <span class="text-accent-400 font-semibold text-sm uppercase tracking-widest">Bize Ulaşın</span>
+                        <h1 class="text-4xl sm:text-5xl font-black mt-3 mb-4">İletişim</h1>
+                        <p class="text-gray-400 max-w-2xl mx-auto">7/24 bize ulaşabilir, lastik ve yol yardım hizmeti talep edebilirsiniz.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <a href="tel:+905395705275" class="group bg-dark-900/60 border border-white/5 rounded-2xl p-8 hover:border-accent-500/30 transition-all text-center">
+                            <div class="w-16 h-16 bg-accent-500/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">📞</div>
+                            <h2 class="text-xl font-bold mb-2">Telefon</h2>
+                            <p class="text-accent-400 text-2xl font-black">0539 570 52 75</p>
+                            <p class="text-gray-500 text-sm mt-2">7/24 arayabilirsiniz</p>
+                        </a>
+                        <a href="https://wa.me/905395705275?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="group bg-dark-900/60 border border-white/5 rounded-2xl p-8 hover:border-green-500/30 transition-all text-center">
+                            <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:scale-110 transition-transform">💬</div>
+                            <h2 class="text-xl font-bold mb-2">WhatsApp</h2>
+                            <p class="text-green-400 text-2xl font-black">0539 570 52 75</p>
+                            <p class="text-gray-500 text-sm mt-2">Mesaj gönderin, hemen dönüş yapalım</p>
+                        </a>
+                    </div>
+                    <div class="bg-dark-900/60 border border-white/5 rounded-2xl p-8">
+                        <h2 class="text-2xl font-bold mb-6 text-center">Hizmet Bölgesi</h2>
+                        <p class="text-gray-300 text-center max-w-2xl mx-auto">İstanbul'un Avrupa ve Anadolu yakası dahil tüm ilçelerine hizmet vermekteyiz. Nerede olursanız olun, bir telefon kadar yakınız.</p>
+                        <div class="mt-6 text-center">
+                            <a href="tel:+905395705275" class="inline-flex items-center gap-3 bg-gradient-to-r from-accent-400 to-accent-500 text-brand-900 font-extrabold text-lg px-10 py-5 rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-accent-500/30">📞 HEMEN ARAYIN</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900/80 border-t border-white/5 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center font-black text-brand-900 text-lg">HB</div>
+                    <span class="font-bold text-lg">HB Otomotiv</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">İstanbul ve çevresinde 7/24 profesyonel oto lastik ve yol yardım hizmeti.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Hizmetler</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Lastik Değişimi</li><li>Mobil Lastik Servis</li><li>7/24 Yol Yardım</li><li>Lastik Tamiri</li><li>Lastik Satış</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Bölgeler</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Kadıköy</li><li>Beşiktaş</li><li>Ataşehir</li><li>Bakırköy</li><li>Pendik</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">İletişim</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="tel:+905395705275" class="hover:text-accent-400 transition">📞 0539 570 52 75</a></li>
+                    <li><a href="https://wa.me/905395705275" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition">💬 WhatsApp</a></li>
+                    <li>📍 İstanbul, Türkiye</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 text-center text-xs text-gray-500">
+            <p>&copy; 2025 HB Otomotiv. Tüm hakları saklıdır. | İstanbul Oto Lastik & 7/24 Yol Yardım</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP & CALL BUTTONS -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="tel:+905395705275" class="w-14 h-14 bg-accent-500 rounded-full flex items-center justify-center shadow-lg shadow-accent-500/30 hover:scale-110 transition-transform" aria-label="Hemen Ara">
+            <svg class="w-6 h-6 text-brand-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+        </a>
+        <a href="https://wa.me/905395705275?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform animate-bounce-slow" aria-label="WhatsApp ile iletişim">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
