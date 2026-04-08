@@ -1,29 +1,71 @@
 /* ========== HB Otomotiv - Custom Styles ========== */
 
-/* Light mode overrides */
+/* ===== LIGHT MODE ===== */
 html:not(.dark) body {
-    background: #f8fafc;
-    color: #1e293b;
+    background: #f0f4f8;
+    color: #1a202c;
 }
-html:not(.dark) .bg-dark-900\/80,
-html:not(.dark) .bg-dark-900\/60,
-html:not(.dark) .bg-dark-900\/95,
-html:not(.dark) .bg-dark-900\/50 {
-    background: rgba(255,255,255,0.9) !important;
-}
-html:not(.dark) .bg-dark-950 {
-    background: #f1f5f9 !important;
-}
-html:not(.dark) .text-gray-100 { color: #1e293b !important; }
-html:not(.dark) .text-gray-300 { color: #475569 !important; }
-html:not(.dark) .text-gray-400 { color: #64748b !important; }
-html:not(.dark) .text-gray-500 { color: #94a3b8 !important; }
-html:not(.dark) .text-white { color: #0f172a !important; }
-html:not(.dark) .border-white\/5 { border-color: rgba(0,0,0,0.08) !important; }
-html:not(.dark) .bg-white\/5 { background: rgba(0,0,0,0.04) !important; }
-html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
 
-/* Nav Items */
+/* Backgrounds */
+html:not(.dark) .bg-dark-950 { background: #f0f4f8 !important; }
+html:not(.dark) .bg-dark-900\/80 { background: rgba(255,255,255,0.92) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.08) !important; }
+html:not(.dark) .bg-dark-900\/60 { background: #ffffff !important; box-shadow: 0 1px 10px rgba(0,0,0,0.06) !important; }
+html:not(.dark) .bg-dark-900\/95 { background: rgba(255,255,255,0.96) !important; }
+html:not(.dark) .bg-dark-900\/50 { background: rgba(255,255,255,0.85) !important; }
+
+/* Text - strong contrast */
+html:not(.dark) .text-gray-100 { color: #1a202c !important; }
+html:not(.dark) .text-gray-300 { color: #374151 !important; }
+html:not(.dark) .text-gray-400 { color: #4b5563 !important; }
+html:not(.dark) .text-gray-500 { color: #6b7280 !important; }
+html:not(.dark) .text-white { color: #111827 !important; }
+
+/* Borders & subtle bgs */
+html:not(.dark) .border-white\/5 { border-color: rgba(0,0,0,0.1) !important; }
+html:not(.dark) .bg-white\/5 { background: rgba(0,0,0,0.05) !important; }
+html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.07) !important; }
+
+/* Gradient overlay on hero still dark for text readability */
+html:not(.dark) .from-dark-950\/95 { --tw-gradient-from: rgba(15,29,48,0.92) !important; }
+html:not(.dark) .via-dark-950\/70 { --tw-gradient-via: rgba(15,29,48,0.65) !important; }
+html:not(.dark) .to-dark-950\/40 { --tw-gradient-to: rgba(15,29,48,0.35) !important; }
+
+/* Hero text stays white on dark overlay */
+html:not(.dark) #page-home section:first-child .text-white,
+html:not(.dark) #page-home section:first-child h1,
+html:not(.dark) #page-home section:first-child .text-gray-100 { color: #ffffff !important; }
+html:not(.dark) #page-home section:first-child .text-gray-300 { color: #d1d5db !important; }
+html:not(.dark) #page-home section:first-child .text-gray-400 { color: #9ca3af !important; }
+
+/* CTA banner section stays dark */
+html:not(.dark) .from-brand-800 { --tw-gradient-from: #1e3a5f !important; }
+html:not(.dark) .to-brand-900 { --tw-gradient-to: #0f1d30 !important; }
+html:not(.dark) section.bg-gradient-to-r.from-brand-800 .text-gray-300 { color: #d1d5db !important; }
+html:not(.dark) section.bg-gradient-to-r.from-brand-800 h2 { color: #ffffff !important; }
+
+/* Nav header bg in light */
+html:not(.dark) .nav-item { color: #4b5563; }
+html:not(.dark) .nav-item:hover,
+html:not(.dark) .nav-item.active { color: #b45309; background: rgba(234,179,8,0.1); }
+html:not(.dark) .mobile-nav-item { color: #4b5563; }
+html:not(.dark) .mobile-nav-item:hover,
+html:not(.dark) .mobile-nav-item.active { color: #b45309; background: rgba(234,179,8,0.1); }
+
+/* Accent text on light stays readable */
+html:not(.dark) .text-accent-400 { color: #b45309 !important; }
+html:not(.dark) .text-green-400 { color: #15803d !important; }
+
+/* Footer in light */
+html:not(.dark) footer { background: #ffffff !important; }
+html:not(.dark) footer .text-gray-400 { color: #6b7280 !important; }
+html:not(.dark) footer .text-gray-500 { color: #9ca3af !important; }
+
+/* Scrollbar light */
+html:not(.dark) ::-webkit-scrollbar-track { background: #f0f4f8; }
+html:not(.dark) ::-webkit-scrollbar-thumb { background: #cbd5e1; }
+html:not(.dark) ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ===== NAV ITEMS ===== */
 .nav-item {
     padding: 0.5rem 1rem;
     border-radius: 0.75rem;
@@ -49,7 +91,7 @@ html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
     background: rgba(250,204,21,0.08);
 }
 
-/* Page transitions */
+/* ===== ANIMATIONS ===== */
 .page-section {
     animation: fadeIn 0.4s ease;
 }
@@ -62,7 +104,6 @@ html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Slow bounce for WhatsApp */
 @keyframes bounce-slow {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
@@ -71,7 +112,6 @@ html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
     animation: bounce-slow 2s infinite;
 }
 
-/* Counter animation placeholder */
 .counter { transition: all 0.3s; }
 
 /* Scroll progress bar */
@@ -88,6 +128,9 @@ html:not(.dark) .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
 /* Service cards hover glow */
 .service-card:hover {
     box-shadow: 0 0 30px rgba(250,204,21,0.06);
+}
+html:not(.dark) .service-card:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
 /* Custom scrollbar */
