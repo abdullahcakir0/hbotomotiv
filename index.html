@@ -69,7 +69,25 @@
 
   gtag('config', 'AW-10830248284');
 </script>
-    
+    <!-- Event snippet for Tıkla ve ara (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10830248284/agtkCKb_2ZocENzyoawo',
+      'value': 1.0,
+      'currency': 'TRY',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <body class="font-sans bg-dark-950 text-gray-100 antialiased">
 
