@@ -7,17 +7,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 
-    function navigateTo(pageName) {
-        pages.forEach(p => { p.classList.add('hidden'); p.classList.remove('active'); });
-        const target = document.getElementById('page-' + pageName);
-        if (target) {
-            target.classList.remove('hidden');
-            target.classList.add('active');
-            // Re-trigger fade animation
-            target.style.animation = 'none';
-            target.offsetHeight; // reflow
-            target.style.animation = '';
-        }
+   function navigateTo(pageName) {
+    // ... mevcut kodlarınız (sayfa gizleme/gösterme işlemleri) ...
+    
+    // SEO ve Başlık güncelleme kısmından hemen sonra şunları ekleyin:
+    const titles = {
+        home: 'HB Otomotiv | İstanbul Oto Lastik & 7/24 Yol Yardım Hizmeti',
+        hizmetler: 'Hizmetlerimiz | HB Otomotiv - Lastik Değişimi, Yol Yardım, Mobil Servis',
+        kurumsal: 'Kurumsal | HB Otomotiv - Hakkımızda, Deneyim ve Güvenilirlik',
+        iletisim: 'İletişim | HB Otomotiv - 7/24 Bize Ulaşın: 0539 570 52 75'
+    };
+    document.title = titles[pageName] || titles.home;
+
+    // GOOGLE ADS İÇİN SANAL SAYFA GÖRÜNTÜLEME GÖNDER
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href + '#' + pageName,
+            page_path: '/' + pageName
+        });
+    }
+}
         // Update active nav
         document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(item => {
             item.classList.toggle('active', item.dataset.page === pageName);
